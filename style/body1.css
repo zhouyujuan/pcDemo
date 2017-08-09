@@ -1,0 +1,74 @@
+
+/*allCourse clearFloat*/
+
+.clearFloat {
+    clear: both;
+}
+
+.allCourse.clearFloat::after{
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
+}
+
+.allCourse.clearFloat{
+    zoom: 1;
+}
+
+.courseLi{
+	display: block;
+	float: left;
+	width:250px;
+	margin-right: 8px;
+	margin-top: 15px;
+}
+.intrDiv{
+	background-color: #fff;
+}
+
+/*.intrDiv:hover .showdetail{
+	
+   display: block;
+}*/
+
+/*图片*/
+.intrDiv img{
+	width: 250px;
+	height: 135px;
+}
+/*课程标题*/
+.intrDiv .courseTitle{
+	padding: 10px 10px 20px 10px;
+	font-size: 14px;
+}
+
+/*课程详解*/
+.intrDiv .showdetail{
+	display: none;
+	position: absolute;
+	width: 250px;
+	background-color: #fff;
+	z-index: 300;
+}
+
+.normalDiv{
+	display: block;
+}
+
+.showdetail p,
+.normalDiv p{
+	color: #a5a5a5;
+	font-size: 13px;
+	padding: 10px 10px 5px 10px;
+	line-height: 20px;
+}
+
+.showdetail .courseTime .studyNumber,
+.showdetail .courseType .videoSign,
+.normalDiv .courseTime .studyNumber{
+   float: right;
+   padding-right: 10px;
+}
+

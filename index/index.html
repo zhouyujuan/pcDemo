@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>极客学院</title>
+    <link rel="stylesheet" type="text/css" href="../style/reset.css">
+    <link rel="stylesheet" type="text/css" href="../style/index.css">
+    <link rel="stylesheet" type="text/css" href="../paginate/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/cypager.min.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <nav class="nav">
+            <img class="logo" src="../images/1.png" alt="极客学院">
+            <ul class="navTab">
+                <li class="tabpull firstShow">
+                    <a href="#">首页</a>
+                </li>
+                <li class="tabpull">
+                    <a href="#">职业学院</a>
+                    <div class="img"></div>
+                    <ul>
+                        <li class="pullTitle">前端学院</li>
+                        <li class="webli"><a href="http://www.jikexueyuan.com/zhiye/web">Web前端工程师</a></li>
+                        <li class="wxli"><a href="http://www.jikexueyuan.com/zhiye/wechatapp">微信小程序工程师</a></li>
+                        <li class="pullTitle">后端学院</li>
+                        <li class="pwli"><a href="http://www.jikexueyuan.com/zhiye/python">Python Web工程师</a></li>
+                        <li class="goli"><a href="http://www.jikexueyuan.com/zhiye/go">Go语言工程师</a></li>
+                        <li class="pullTitle">移动学院</li>
+                        <li class="adli"><a href="http://www.jikexueyuan.com/zhiye/android">Android工程师</a></li>
+                        <li class="iosli"><a href="http://www.jikexueyuan.com/zhiye/ios">iOS工程师</a></li>
+                    </ul>
+                </li>
+                <li class="tabpull">
+                    <a class="tabFirst" href="#" style="color: #37B358">会员课程</a>
+                    <div class="img first"></div>
+                    <ul>
+                        <li><a href="#">课程库</a><span>2500+</span></li>
+                        <li><a href="http://ke.jikexueyuan.com/zhiye/">职业路径图</a><span>9</span></li>
+                        <li><a href="http://www.jikexueyuan.com/path/">知识体系图</a><span>24</span></li>
+                        <li><a href="http://ke.jikexueyuan.com/xilie/">系列课程</a><span>101</span></li>
+                        <li><a href="http://www.jikexueyuan.com/tag/">课程标签</a><span>4000+</span></li>
+                        <li><a href="http://www.jikexueyuan.com/vip/">VIP会员购买</a><span>30/月260/年</span></li>
+                    </ul>
+                </li>
+                <li class="tabpull">
+                    <a href="#">极客社区</a>
+                    <div class="img"></div>
+                    <ul>
+                        <li><a href="http://wenda.jikexueyuan.com/">技术问答</a><span>2000+</span></li>
+                        <li><a href="http://wiki.jikexueyuan.com/">wiki</a><span>351+</span></li>
+                        <li><a href="http://qun.jikexueyuan.com/">社群</a><span>7000+</span></li>
+                        <li><a href="http://download.jikexueyuan.com/">资源下载</a><span>3000+</span></li>
+                    </ul>
+                </li>
+                <li class="tabpull search">
+                    <a href="#" class="headerSearch">搜索</a>
+                    <div class="showSearch">
+                        <form action="http://xue.jikexueyuan.com/jiuye">
+                            <input type="text" placeholder="搜索课程、问答或wiki" name="word" />
+                            <a href="#">Android</a>
+                            <a href="#">iOS</a>
+                            <a href="#">HTML5</a>
+                        </form>
+                        <a href="#" class="del">X</a>
+                    </div>
+                </li>
+                <li class="tabpull down">
+                    <a href="#" class="downIphone">下载</a>
+                    <div class="iphoneDown">
+                        下载手机APP
+                    </div>
+                </li>
+                <li class="tabpull login">
+                    <a href="#" class="loginUser">登录</a>
+                    <div class="userInfor">
+                        <ul class="usrdown">
+                            <li>学习中心</li>
+                            <li>个人主页</li>
+                            <li>消息通知</li>
+                            <li>账号设置</li>
+                            <li>退出登录</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- 主体 -->
+    <div class="container clearfloat">
+        <!-- 左侧导航 -->
+        <div class="contentLeft">
+            <ul class="upSearch">
+                <li class="leftTitle">课程库</li>
+                <li class="dL"><a href="#" class="dla">移动开发</a>
+                    <div class="courseDetail1">
+                        <ul class="bgUl">
+                            <li>
+                                <h2>应用开发</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">Android</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">iOS</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>游戏开发</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">Cocos</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Unity3D</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">SpriteKit 2D</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Unreal</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>常用框架</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">Cordova</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">React Native</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dL"><a href="#" class="dla">前端开发</a>
+                    <div class="courseDetail1">
+                        <ul class="bgUl">
+                            <li>
+                                <h2>前端基础</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">HTML</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">CSS</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">JavaScript</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">HTML5</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">CSS3</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">技术前瞻</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>前端进阶</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">Typescript</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">前端安全</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">项目实战</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>前端框架</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">jQuery</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">jQuery UI</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">jQuery Mobile</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Ext JS</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">AngularJS</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">ReactJS</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Bootstrap</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">React Native</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Backbone</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Three.js</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">MooTools</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Compass</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>HTML5游戏</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">Canvas</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">SVG</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">WebGL</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Cocos2d-js</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">CreateJS</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Flash</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Unreal</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Egret</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Phaser</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dL"><a href="#" class="dla">后端开发</a>
+                    <div class="courseDetail1">
+                        <ul class="bgUl">
+                            <li>
+                                <h2>Python</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">Python基础</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">web2py</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Django</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Flask</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">GUI</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">数据挖掘与分析</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>PHP</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">PHP基础</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">YII</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">ThinkPHP</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Laravel</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">WordPress</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Phalcon</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Apache</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Facebook Hack</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>Node.js</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">Node.js基础</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">express</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Meteor</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Hexo</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>ASP.NET</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">C#</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">ASP.NET MVC</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Entity Framework</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">WPF</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>J2EE</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">JSP</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Maven</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Spring</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">SpringMVC</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Struts2</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">MyBatis</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Hibernate</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Lucene</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">常用框架</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">项目实战</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>Ruby</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">Ruby基础</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Ruby on Rails</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Grape</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Ruby进阶</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">RubyMine</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>Go</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">Go基础</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Revel</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">beego</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>Erlang</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">Erlang基础</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dL"><a href="#" class="dla">基础知识</a>
+                    <div class="courseDetail1">
+                        <ul class="bgUl">
+                            <li>
+                                <h2>基础语言</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">C</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">C++</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Objective-C</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Swift</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">C#</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Java</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Perl</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Shell</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Qt</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Scala</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>计算机基础</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">计算机组成原理</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">网络工程</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Word</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Excel</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">PowerPoint</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>开发工具</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">Git/Github</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">SVN</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">VI</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>开放标准</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">OpenCL</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Open XML</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">OpenGL/GLES</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dL"><a href="#" class="dla">云计算&大数据</a>
+                    <div class="courseDetail1">
+                        <ul class="bgUl">
+                            <li>
+                                <h2>云计算</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">OpenStack</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Docker</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">CloudStack</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Windows Azure</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">IaaS</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>大数据</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">Hadoop</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Storm</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Hive</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Flume</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Kafka</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Zookeeper</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Hbase</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Spark</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">信息检索</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">数据分析</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>虚拟化</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">VMware</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>云平台</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">腾讯云</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dL"><a href="#" class="dla">智能硬件&物联网</a>
+                    <div class="courseDetail1">
+                        <ul class="bgUl">
+                            <li>
+                                <h2>硬件架构</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">C51</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">ARM</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Keil</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Cotex-M</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Cortex-A</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">AVR</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>物联网操作系统</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">RTOS</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Android Wear</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Apple Watchkit</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>开源硬件平台</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">Arduino</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">树莓派</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">mbed</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">GoKit</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">LeMaker Guitar</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>通信连接技术</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">无线WiFi</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">移动通信</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">蓝牙</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">NFC</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>信息感知处理技术</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">传感器</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">数据挖掘</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>人机交互技术</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">语音识别</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">人脸识别</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">手势识别</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dL"><a href="#" class="dla">数据库</a>
+                    <div class="courseDetail1">
+                        <ul class="bgUl">
+                            <li>
+                                <h2>SQL</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">MySQL</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">SQL Server</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Oracle</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">SQLite</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">PostgreSQL</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">DB2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>NoSQL</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">Cassandra</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Redis</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">MongoDB</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dL"><a href="#" class="dla">认证考试</a>
+                    <div class="courseDetail1">
+                        <ul class="bgUl">
+                            <li>
+                                <h2>计算机等级考试</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">一级</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">二级C</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">二级Java</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">二级C++</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">网络工程师</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">数据库工程师</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">信息安全工程师</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>企业认证</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">思科认证</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Oracle认证</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Linux认证</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">ARM认证</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dL"><a href="#" class="dla">企业IT</a>
+                    <div class="courseDetail1">
+                        <ul class="bgUl">
+                            <li>
+                                <h2>运维管理</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">Shell</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">自动化运维</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Nginx</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Apache</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">运维监控</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>商业智能</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">FileMaker</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>操作系统</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">Linux</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Windows</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Mac OS</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>企业服务</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">B2C</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dL"><a href="#" class="dla">设计&产品&测试</a>
+                    <div class="courseDetail1">
+                        <ul class="bgUl">
+                            <li>
+                                <h2>设计基础</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">Photoshop</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Flash</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Illustrator</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Sketch</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>游戏设计</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">界面设计</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">角色设计</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>产品经理</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">需求分析</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">Axure</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">项目实战</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>视觉设计</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">应用UI设计</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">网页UI设计</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">设计理论</a></li>
+                                    <li><span></span></li>
+                                    <li><a href="#">图形设计</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2>测试工具</h2></li>
+                            <li>
+                                <ul class="detUl">
+                                    <li><a href="#">自动化测试</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="downSearch">
+                <li><a href="#">职业路径图<span>查看全部</span></a></li>
+                <li><a href="#">知识体系图<span>查看全部</span></a></li>
+                <li><a href="#">系列课程图<span>查看全部</span></a></li>
+                <li><a href="#">课程标签图<span>查看全部</span></a></li>
+            </ul>
+            <div id="courseDetail">
+                <div id="realContent">
+                </div>
+            </div>
+        </div>
+        <!-- 右侧展示 -->
+        <div class="contentReight">
+            <!-- 右侧头部分类 -->
+            <div class="conteentReightHeader">
+                <ul class="RheaderUl">
+                    <li class="allClass">全部课程</li>
+                    <li class="RhPullDown">
+                        <a href="#">最新</a>
+                        <ul class="zuiNew">
+                            <li class="zuixin"><a href="#">最新</a></li>
+                            <li class="zuihot"><a href="#">最热</a></li>
+                        </ul>
+                    </li>
+                    <li class="RhPullDown">
+                        <a href="#">课程类型</a>
+                        <ul class="courseTypeul">
+                            <li><a href="#">VIP</a></li>
+                            <li><a href="#">免费</a></li>
+                            <li><a href="#">认证专享</a></li>
+                            <li><a href="#">全部</a></li>
+                        </ul>
+                    </li>
+                    <li class="RhPullDown">
+                        <a href="#">内容类型</a>
+                        <ul class="contentTypeUl">
+                            <li><a href="#">知识精讲</a></li>
+                            <li><a href="#">项目实战</a></li>
+                            <li><a href="#">全部</a></li>
+                        </ul>
+                    </li>
+                    <li class="RhPullDown">
+                        <a href="#">难度等级</a>
+                        <ul class="lastUlpw">
+                            <li><a href="#">初级</a></li>
+                            <li><a href="#">中级</a></li>
+                            <li><a href="#">高级</a></li>
+                            <li><a href="#">全部</a></li>
+                        </ul>
+                    </li>
+                    <li class="changeDouble">
+                        <span>多列</span>
+                    </li>
+                    <li class="changeSignal">
+                        <span>单列</span>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <!-- 主题展示部分 -->
+            <div id="contentBodyshow">
+                <div id="contentBodyReal">
+                </div>
+            </div>
+            <div class="pageShow">
+                <div id="pagerArea" unselectable="on" onselectstart="return false;" style="-moz-user-select:none;">
+                    <ul class="pager" id="cy_pager">
+                        <li class="pg-prev" id="prev">上一页</li>
+                        <li page="1" class="pg-showpage">1</li>
+                        <li page="2" class="pg-showpage">2</li>
+                        <li page="3" class="pg-showpage">3</li>
+                        <li page="4" class="pg-showpage">4</li>
+                        <li page="5" class="pg-showpage">5</li>
+                        <li page="6" class="pg-showpage">6</li>
+                        <li page="7" class="pg-showpage">7</li>
+                        <li page="8" class="pg-showpage">8</li>
+                        <li page="9" class="pg-showpage">9</li>
+                        <li page="pg-next" id="next">下一页</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="fixdiv">
+            <div class="backTop"></div>
+            <div class="phone">
+                <div class="download">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="Innerfooter">
+            <div class="footerLink">
+                <div class="footerLogo">
+                    <img src="../images/footer1.jpg" alt="极客学院" />
+                    <p>极客学院，编程是一种信仰！</p>
+                </div>
+                <div class="footchoose">
+                    <ul class="footProfession">
+                        <li>职业学院</li>
+                        <li><a href="http://www.jikexueyuan.com/zhiye/web">Web前端工程师</a></li>
+                        <li><a href="http://www.jikexueyuan.com/zhiye/python">Python Web工程师</a></li>
+                        <li><a href="http://www.jikexueyuan.com/zhiye/go">Go工程师</a></li>
+                        <li><a href="http://www.jikexueyuan.com/zhiye/ios">iOS工程师</a></li>
+                        <li><a href="http://www.jikexueyuan.com/zhiye/wechatapp">微信小程序工程师</a></li>
+                    </ul>
+                    <ul class="footVipCourse">
+                        <li>会员课程</li>
+                        <li><a href="http://www.jikexueyuan.com/course/">课程库</a></li>
+                        <li><a href="http://www.jikexueyuan.com/path/">知识体系图</a></li>
+                        <li><a href="http://ke.jikexueyuan.com/zhiye/">职业路径图</a></li>
+                        <li><a href="http://ke.jikexueyuan.com/xilie/">系列课程</a></li>
+                        <li><a href="http://www.jikexueyuan.com/tag/">课程标签</a></li>
+                    </ul>
+                    <ul class="footCommunity">
+                        <li>极客社区</li>
+                        <li><a href="http://wenda.jikexueyuan.com/">技术问答</a></li>
+                        <li><a href="http://wiki.jikexueyuan.com/">Wiki</a></li>
+                        <li><a href="http://download.jikexueyuan.com/">资源下载</a></li>
+                        <li><a href="http://qun.jikexueyuan.com/">社群</a></li>
+                    </ul>
+                    <ul class="footOther">
+                        <li>其他</li>
+                        <li><a href="http://help.jikexueyuan.com/">关于我们</a></li>
+                        <li><a href="http://help.jikexueyuan.com/join.html">加入我们</a></li>
+                        <li><a href="http://j.jikexueyuan.com/evangelist/apply">讲师合作</a></li>
+                        <li><a href="http://help.jikexueyuan.com/contact.html">联系我们</a></li>
+                        <li><a href="http://www.jikexueyuan.com/friendlink.html">友情链接</a></li>
+                    </ul>
+                </div>
+                <div class="footerPhone">
+                    <p>服务热线:400-678-8266</p>
+                    <ul>
+                        <li>iPhone</li>
+                        <li>Android</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerCopyRight">
+                <p class="footerCpoy">Copyright&nbsp;&copy;<a href="http://www.jikexueyuan.com/">jikexueyuan.com</a>All Rights Reserved.京ICP备11018032号-8&nbsp;京公网安备11010802020210</p>
+                <p class="footerintegrity"><a href="https://credit.cecdc.com/CX20160908025320080267.html">诚信</a></p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../paginate/jquery.paginate.js"></script>
+    <script type="text/javascript" src="../js/cypager.min.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $("#pagerArea").cypager({
+            pg_size: 10,
+            pg_nav_count: 8,
+            pg_total_count: 194,
+            pg_call_fun: function(count) {
+
+                // $("#console").html("正在加载第（"+count+")页的数据，请稍后。。。");
+                window.location.reload();
+            }
+        })
+    })
+    </script>
+</body>
+
+</html>

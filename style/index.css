@@ -1,0 +1,874 @@
+body {
+    background-color: #fafafa;
+}
+
+
+/*头部导航*/
+
+.navigation {
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ECECEC;
+}
+
+
+/*居中的导航的设置*/
+
+.nav {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*logo图片*/
+
+.logo {
+    width: 116px;
+    height: 46px;
+    padding: 10px 10px 10px 0;
+}
+
+
+/*导航切换*/
+
+.navTab {
+    position: absolute;
+    left: 175px;
+    top: 10px;
+    width: 830px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.navTab .tabpull .img {
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    margin-left: 4px;
+    margin-bottom: 1px;
+    background: url(../images/nav_down.jpg);
+    background-size: 10px 5px;
+}
+
+.navTab .tabpull:hover .img{
+    animation: circle 1s linear 1 forwards;
+    -webkit-animation: circle 1s linear 1 forwards;
+}
+
+@-webkit-keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    70% {
+        transform: rotate(360deg);
+    }
+    90% {
+        transform: rotate(530deg);
+        -webkit-animation-play-state: paused;
+    }
+    100% {
+        transform: rotate(540deg);
+    }
+}
+
+
+.navTab .tabpull .img.first {
+    background: url(../images/nav_selectdown.jpg);
+    background-size: 10px 5px;
+}
+
+
+
+
+/*这里是设置标题中a标签*/
+
+.navTab .tabpull>a {
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+
+/*li  排成一排*/
+
+.tabpull a {
+    color: #000;
+}
+
+.tabpull {
+    float: left;
+    position: relative;
+    width: 15%;
+}
+
+.tabpull.firstShow {
+    width: 10%;
+}
+
+
+/*搜索*/
+
+.tabpull.search {
+    width: 4%;
+    margin-left: 248px;
+    background: url(../images/normal_search.png) right center no-repeat;
+    background-size: 16px 16px;
+}
+
+.tabpull.search:hover {
+    background: url(../images/hover_search.png) right center no-repeat;
+    background-size: 16px 16px;
+    
+}
+
+
+
+.tabpull.search a,
+.tabpull.down a,
+.tabpull.login a {
+    color: transparent;
+}
+
+.tabpull.down,
+.tabpull.login {
+    width: 4%;
+    margin-left: 10px;
+}
+
+.tabpull.down {
+    background: url(../images/copy.png) right center no-repeat;
+    background-size: 16px 16px;
+}
+
+.tabpull.login {
+    background: url(../images/persion.png) right center no-repeat;
+    background-size: 16px 16px;
+}
+
+.tabpull.search .showSearch {
+    width: 830px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    z-index: 200;
+    right: -90px;
+    display: none;
+    background: url(../images/normal_search.png) left center no-repeat;
+    background-size: 16px 16px;
+    background-color: #fff;
+    padding-left: 20px;
+}
+
+.tabpull.search .showSearch form {
+    margin-top: 3px;
+}
+
+.tabpull.search .showSearch input {
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    border: 0px;
+}
+
+.tabpull.search .showSearch a,
+ .tabpull.search .del{
+    text-decoration: none;
+    font-size: 13px;
+    background-color: #ddd;
+    color: #000;
+    padding: 6px;
+}
+
+.tabpull.search .showSearch .del {
+    position: absolute;
+    top: -3px;
+    left: 820px;
+    background-color: #fff;
+}
+
+
+/*下拉下载框*/
+
+.tabpull.down .iphoneDown {
+    display: none;
+    width: 120px;
+    height: 130px;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 50px;
+    background: url(../images/down.png) center 80% no-repeat;
+    background-color: #fff;
+    background-size: 80px 80px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.tabpull.down:hover .iphoneDown {
+    display: block;
+}
+
+
+/*用户信息*/
+
+.tabpull.login .userInfor {
+    width: 120px;
+    height: 150px;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 50px;
+    background-color: #fff;
+    display: none;
+}
+
+.tabpull.login .usrdown {
+    width: 120px;
+    height: 150px;
+    display: block;
+    border: 0px;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 13px;
+}
+
+.tabpull.login:hover .userInfor {
+    display: block;
+}
+
+.tabpull.login .userInfor ul li {
+    height: 30px;
+    width: 120px;
+    color: #000;
+}
+
+
+/*下拉框职业学院*/
+
+.tabpull ul {
+    display: none;
+    background-color: #fff;
+    width: 280px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.tabpull ul li {
+    position: relative;
+}
+
+.tabpull ul li a {
+    text-decoration: none;
+    color: #778899;
+    display: block;
+    width: 255px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 25px;
+    font-size: 13px;
+    background: url(../images/apple.jpg) no-repeat;
+    background-size: 15px 15px;
+    background-position: 5px 10px;
+    background-color: #fff;
+}
+
+.tabpull ul li span {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    font-size: 12px;
+    color: #778899;
+}
+
+.tabpull .pullTitle {
+    width: 270px;
+    background-color: #fafafa;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+
+
+/*鼠标滑过颜色变成绿色*/
+
+.tabpull .tabFirst {
+    color: #37B358;
+}
+
+
+/*主体部分*/
+
+.container {
+    width: 1000px;
+    background-color: #fafafa;
+    margin: 0 auto;
+
+}
+
+
+/*/*主体内部左侧导航*/
+
+.contentLeft {
+    float: left;
+    width: 210px;
+    height: 580px;
+    background-color: #fff;
+    margin-top: 20px;
+    position: relative;
+    
+}
+
+
+/*左侧搜索课程库部分*/
+
+.upSearch {
+    width: 208px;
+    height: 418px;
+    border: 1px solid #37B358;
+}
+
+.upSearch li,
+.downSearch li {
+    height: 37px;
+    border-bottom: 1px solid #fafafa;
+    line-height: 36px;
+    font-size: 14px;
+}
+
+.upSearch .leftTitle {
+    padding-left: 10px;
+}
+
+.upSearch li a {
+    text-decoration: none;
+    color: #2F4F4F;
+}
+
+.courseDetail1{
+     /*float: left;*/
+    position: absolute;
+    top: 0px;
+    left: 209px;
+   /* margin-left: 209px;
+    margin-top: -571px;*/
+     /*margin-top: 0px;*/
+    width: 400px;
+    min-height: 410px;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    background-color: #fff;
+    display: none; 
+}
+
+
+
+
+
+/*左侧导航下半部分*/
+
+.downSearch {
+    width: 208px;
+    height: 150px;
+}
+
+.downSearch li {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 0px;
+    padding-left: 0px;
+}
+
+.downSearch li a,
+.upSearch li a {
+    /*width: 180px;*/
+    padding-left: 30px;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
+.downSearch li span {
+    float: right;
+    font-size: 8px;
+    padding-right: 5px;
+    color: #fff;
+}
+
+.downSearch li a:hover {
+    background-color: #fafafa;
+    color: #37B358;
+}
+
+.downSearch li a:hover span {
+    color: #000;
+}
+
+/*左侧鼠标触发*/
+.courseDetail1 .bgUl li .detUl li{
+    display: inline-block;
+}
+
+.courseDetail1 .bgUl li .detUl li a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    color: #696969;
+    padding: 15px 4px 15px 4px;
+}
+
+.courseDetail1 .bgUl li .detUl li span{
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: #e0e0e0;
+}
+
+
+/*选中模块会有的阴影效果*/
+
+/*每个条目下的细分*/
+.courseDetail1{
+    float: left;
+    margin-left: 0px;
+     margin-top: 0px;
+    width: 400px;
+    min-height: 410px;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    background-color: #fff;
+    display: none; 
+}
+
+.upSearch .dL .dla:hover {
+    color: #37B358;
+    width: 180px;
+    position: relative;
+    z-index: 300;
+    background-color: #fff;
+    box-shadow: -2px 2px 2px #e0e0e0;
+    -webkit-box-shadow: -2px 2px 2px #e0e0e0;
+    -moz-box-shadow: -2px 2px 2px #e0e0e0;
+}
+.upSearch .dL:hover .courseDetail1{
+    display: block;
+}
+
+/*主体内部右侧*/
+
+.contentReight {
+    float: right;
+    width: 775px;
+    background-color: #fafafa;
+    margin-top: 20px;
+}
+
+
+/*右侧头部分类*/
+
+.conteentReightHeader {
+    width: 776px;
+    height: 40px;
+    background-color: #fff;
+}
+
+
+/*分类的ul*/
+
+.RheaderUl {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*分类的ul下面的li*/
+
+.RheaderUl .allClass,
+.RheaderUl .RhPullDown,
+.RheaderUl .changeDouble,
+.RheaderUl .changeSignal {
+    float: left;
+    padding: 10px 17px 13px 10px;
+    background-color: #fff;
+}
+
+.RheaderUl .changeDouble span {
+    background: url(../images/double.png) center no-repeat;
+    background-size: 13px 13px;
+    color: transparent;
+}
+
+.RheaderUl .changeSignal span {
+    background: url(../images/signal.png) center no-repeat;
+    background-size: 13px 13px;
+    color: transparent;
+}
+
+
+/*全部课程*/
+
+.RheaderUl .allClass {
+    border-right: 1px solid #ddd;
+}
+
+
+/*最新，课程类型，内容类型，难度等级*/
+
+.RheaderUl .RhPullDown:hover {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    box-shadow: -1px 1px 1px #e0e0e0;
+    -webkit-box-shadow: -1px 1px 1px #e0e0e0;
+    -moz-box-shadow: -1px 1px 1px #e0e0e0;
+}
+
+
+/*分类的li 中标题a*/
+
+.RheaderUl li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
+
+/*下拉的down中的ul*/
+
+.RhPullDown ul {
+    margin-left: -11px;
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    z-index: 200;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    text-align: center;
+    line-height: 20px;
+    padding-top: 20px;
+}
+
+.RhPullDown ul li {
+    padding-top: 5px;
+    padding-left: 13px;
+    padding-right: 14px;
+    padding-bottom: 5px;
+}
+
+.RhPullDown .lastUlpw li {
+    padding-left: 29px;
+    padding-right: 30px;
+}
+
+
+/*多列按钮*/
+
+.RheaderUl .changeDouble {
+    margin-left: 283px;
+    padding: 10px 0px 10px 0;
+    border-left: 1px solid #fafafa;
+}
+
+
+/*单列按钮*/
+
+.RheaderUl .changeSignal {
+    margin-left: 1px;
+    padding: 10px 0px;
+    border-left: 1px solid #fafafa;
+}
+
+.clearfloat {
+    clear: both;
+}
+
+.container.clearfloat::after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
+}
+
+.container.clearfloat {
+    zoom: 1;
+}
+
+#contentBodyshow {
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.pageShow {
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ddd;
+}
+
+
+/*回到顶部*/
+
+.backTop {
+    width: 33px;
+    height: 33px;
+    background: url(../images/backnormal.png) center no-repeat;
+    background-size: 33px 33px;
+    display: none;
+}
+
+.phone {
+    width: 33px;
+    height: 27px;
+    background: url(../images/downPhone.png) center no-repeat;
+    background-size: 17px 27px;
+}
+
+.fixdiv {
+    width: 33px;
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    background-color: #f7f7f7;
+}
+
+.phone {
+    position: relative;
+}
+
+
+/*下载*/
+
+.download {
+    width: 90px;
+    height: 105px;
+    position: absolute;
+    right: 34px;
+    bottom: -15px;
+    background: url(../images/down.png) center no-repeat;
+    background-size: 73px 78px;
+    background-position: 9px 7px;
+    background-color: #D9D9D9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: none;
+}
+
+.phone:hover .download {
+    display: block;
+}
+
+
+/*联系*/
+
+.footer {
+    background: #ffffff;
+    height: 19em;
+}
+
+.Innerfooter {
+    height: 100%;
+    /*max-width: 1000px;*/
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+
+/*footer的上半部分*/
+
+.Innerfooter .footerLink {
+    height: 215px;
+    width: 100%;
+    background-color: orange;
+}
+
+
+/*footer 左侧的logo部分*/
+
+.footerLink .footerLogo {
+    /*background-color: yellow;*/
+    background-color: #ffffff;
+    width: 180px;
+    height: 100%;
+    float: left;
+    padding-top: 14px;
+}
+
+
+/*logo*/
+
+.footerLogo img {
+    width: 110px;
+    margin-top: 20px;
+}
+
+.footerLogo p {
+    font-size: 12px;
+    color: #C4C4C4;
+    margin-top: 20px;
+}
+
+
+/*footer 中间的选择部分*/
+
+.footerLink .footchoose {
+    background-color: #ffffff;
+    width: 640px;
+    height: 100%;
+    float: left;
+    font-size: 13px;
+    padding-top: 20px;
+    padding-bottom: 25px
+}
+
+
+/*中间的左侧*/
+
+.footchoose .footProfession {
+    width: 150px;
+    float: left;
+}
+
+
+/*中间的中侧*/
+
+.footchoose .footVipCourse {
+    width: 150px;
+    float: left;
+}
+
+
+/*中间的右侧*/
+
+.footchoose .footCommunity {
+    width: 150px;
+    float: left;
+}
+
+.footchoose .footOther {
+    width: 150px;
+    float: left;
+}
+
+.footchoose .footProfession,
+.footchoose .footVipCourse,
+.footchoose .footCommunity,
+.footchoose .footOther {
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.footProfession:first-child,
+.footVipCourse:first-child,
+.footCommunity:first-child,
+.footOther:first-child {
+    height: 25px;
+    color: #8B8B8B;
+}
+
+.footProfession li,
+.footVipCourse li,
+.footCommunity li,
+.footOther li {
+    height: 25px;
+}
+
+.footProfession li a,
+.footVipCourse li a,
+.footCommunity li a,
+.footOther li a {
+    text-decoration: none;
+    color: #8B8B8B;
+}
+
+
+/*footer 右侧的选择部分*/
+
+.footerLink .footerPhone {
+    background-color: #ffffff;
+    width: 180px;
+    height: 100%;
+    float: left;
+    padding-top: 18px;
+}
+
+.footerPhone p {
+    margin-top: 18px;
+    color: #8B8B8B;
+    font-size: 13px;
+}
+
+.footerPhone ul {
+    display: block;
+    position: relative;
+}
+
+.footerPhone ul li {
+    border: 1px solid #C4C4C4;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 10px;
+    padding-left: 31px;
+    background: url(../images/down_link.jpg) no-repeat;
+    background-size: 20px 20px;
+    background-position: 5px 7px;
+    color: #8B8B8B;
+    font-size: 12px;
+}
+
+
+/*footer的下半部分*/
+
+.Innerfooter .footerCopyRight {
+    height: 30px;
+    font-size: 13px;
+}
+
+
+/*copy*/
+
+.footerCopyRight .footerCpoy {
+    margin-top: 20px;
+    text-align: center;
+    color: #8B8B8B;
+}
+
+
+/*极客学院的链接*/
+
+.footerCopyRight .footerCpoy a {
+    text-decoration: none;
+    color: #8B8B8B;
+}
+
+
+/*诚信商标*/
+
+.footerCopyRight .footerintegrity {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/*诚信课程的链接*/
+
+.footerCopyRight .footerintegrity a {
+    display: inline-block;
+    border: 1px solid #F78631;
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #8B8B8B;
+}

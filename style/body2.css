@@ -1,0 +1,48 @@
+.allCourse {}
+
+.courseLi {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.courseLi .imgLink{
+	
+}
+
+.courseLi img {
+    width: 185px;
+    height: 100px;
+}
+
+.courseLi .courseTitle {
+    float: right;
+    text-decoration: none;
+    color: #000;
+    width: 581px;
+    margin-top: 10px;
+}
+
+.courseLi a:hover{
+	color: #37B358;
+}
+
+.courseLi .showdetail {
+    float: right;
+    margin-top: -62px;
+    width: 579px;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.courseLi .courseTime {
+    padding-top: 15px;
+}
+.courseTime .studyNumber{
+	float: right;
+	padding-right: 10px;
+}
+.courseTime .type{
+	padding-left: 20px;
+}
